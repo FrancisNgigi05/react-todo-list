@@ -33,7 +33,7 @@ function App() {
   const todoList = [{id: 1, name: "Practice Meditation"}, {id: 2, name: "Read a book"}]
   const [todos, setTodos] = useState(todoList);
 
-  // Handling the addition of a task and it format in the todoList
+  // Handling the addition of a task and its format in the todoList
   function handleAddTask(newTaskName) {
     const newTask = {id: Date.now(), name: newTaskName};
     setTodos((prevTodos) => [...prevTodos, newTask]);
